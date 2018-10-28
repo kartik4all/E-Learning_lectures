@@ -1,0 +1,893 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+box-sizing: border-box;
+}
+h1,h2,h3,h4{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    display: inline;
+  
+}
+a{
+    text-decoration: none;
+    
+}
+ul li a{
+    display: inline-block;
+}
+.row{
+    display: flex;
+}
+.container{
+    width: 100%;
+}
+
+/* header */
+
+
+#header{
+   position: fixed;
+   z-index: 10;
+    height: 70px;
+    background-color:    rgba(0, 0, 0, 0.72);
+}
+
+#header .container{
+    position: fixed;
+    padding-top: 10px;
+    height: 40px;
+}
+#header a{
+    color: white;
+}
+#logo{
+    width: 15%;
+   margin-left: 1%;
+   text-align: center;
+   font-size: 150%;
+   font-family: 'Wendy One', sans-serif;
+   font-weight: 600;
+   margin-top: 0.9%;
+}
+
+#menu{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 1.3%;
+    margin-left: 5%;
+    width: 75%;
+    margin: 0px;
+    
+}
+#menu ul li{
+text-align: center;
+    padding: 4%;
+   
+    font-size: 15px;
+    position: relative;
+}
+#menu ul li:after , #menu ul li:before{
+   position: absolute;
+   content: "";
+   width: 60%;
+   left: 18%;
+  transition: 0.5s;
+   border-bottom: 1px solid white;
+   opacity: 0;
+}
+
+#menu ul li:before{
+    top: 25%;
+}
+#menu ul li:after{
+    top: 70%;
+}
+#menu ul li:hover a{
+    transition: 0.5s;
+    color: #e00231;
+}
+#menu ul li:hover:after{
+    opacity: 1;
+    top :25%;
+}
+#menu ul li:hover:before{
+    opacity: 1;
+    top:70%;
+}
+
+#search{
+    padding-top: 0.6%;
+    width: 5%;
+   margin-left: 3%;
+    text-align: right;
+}
+#search div{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #E00231;
+    font-size: 20px;
+}
+#search i{
+    color: white;
+}
+
+#menu ul li{
+    padding: 1%;
+    margin-top: 15%;
+}
+#menu ul li:after , #menu ul li:before{
+    left: 8%;
+    width: 85%;
+}
+#menu ul li:before{
+    top: 15%;
+}
+#menu ul li:after{
+    top: 80%;
+}
+
+#menu ul li:hover:after{
+    opacity: 1;
+    top :15%;
+}
+#menu ul li:hover:before{
+    opacity: 1;
+    top:80%;
+}
+#search{
+   margin: 0%;
+    width: 6%;
+   
+    text-align: right;
+}
+#search div{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #E00231;
+    font-size: 15px;
+}
+#search div i{
+    padding-top: 3px;
+    padding-right: 4px;
+}
+@media(max-width: 576px){
+    #logo{
+        font-size: 150%;
+        margin-top: 1.5%;
+    }
+    #menu ul li{
+        padding: 0%;
+        font-size: 12px;
+    }
+    #menu{
+        padding-top: 3%;
+    }
+    #menu ul li:after , #menu ul li:before{
+        left: 8%;
+        width: 85%;
+    }
+    #menu ul li:before{
+        top: -30%;
+    }
+    #menu ul li:after{
+        top: 200%;
+    }
+    
+    #menu ul li:hover:after{
+        opacity: 1;
+        top :-30%;
+    }
+    #menu ul li:hover:before{
+        opacity: 1;
+        top:200%;
+    }
+}
+@media(max-width:760px){
+    #logo{
+        margin: 0px;
+        margin-top: 1.5%;
+    }
+    #header{
+        justify-content: center;
+    }
+    #menu{
+        padding-top: 2%;
+    }
+    #menu ul li:after , #menu ul li:before{
+        left: 8%;
+        width: 85%;
+    }
+    #menu ul li:before{
+        top: 5%;
+    }
+    #menu ul li:after{
+        top: 90%;
+    }
+    
+    #menu ul li:hover:after{
+        opacity: 1;
+        top :5%;
+    }
+    #menu ul li:hover:before{
+        opacity: 1;
+        top:90%;
+    }
+}
+    @media(max-width: 480px){
+        #logo{
+            font-size: 140%;
+            margin-top: 2%;
+        }
+        #menu ul li{
+            padding: 0%;
+            margin: 0%;
+            font-size: 11px;
+        }
+        #menu{
+            padding-top: 2.5%;
+        }
+        #menu ul li:after , #menu ul li:before{
+            left: 0%;
+            width: 95%;
+        }
+        #menu ul li:before{
+            top: -10%;
+        }
+        #menu ul li:after{
+            top: 105%;
+        }
+        
+        #menu ul li:hover:after{
+            opacity: 1;
+            top :-10%;
+        }
+        #menu ul li:hover:before{
+            opacity: 1;
+            top:105%;
+        }
+       
+    }
+    @media(max-width: 380px){
+        #logo{
+            font-size: 110%;
+            margin-top: 3.2%;
+        }
+        #menu ul li{
+            padding: 0%;
+            font-size: 9px;
+        }
+        #menu{
+            padding-top: 2.5%;
+        }
+    }
+
+
+
+/* ...........footer   player............ */
+
+#player{
+    position: fixed;
+    
+    bottom: 0%;
+    z-index: 10;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+#myplayer{
+   justify-content: space-between;
+    height: 80px;
+    text-align: left;
+}
+#playerbuttons{
+    text-align: center;
+    width: 20%;
+    padding: 0px;
+    padding-top: 1.7%;
+}
+#playerbuttons i{
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+   color: white;
+  
+}
+#playerbuttons button{
+    margin: 1%;
+    background-color: transparent;
+    border: 0px;
+    height: 50%;
+}
+
+#playerimg{
+    margin: 6px;
+    width: 10%; 
+    position: relative;
+    
+}
+#playerimg img{
+    height: 100%;
+    width: 55%;
+    left: 15%;
+    position: absolute;
+    background-color: aqua;
+}
+
+#songplay{
+    width: 60%;
+    position: relative;
+    
+}
+#songName{
+   
+    position: absolute;
+    left: 0px;
+    top: 35%;
+    width: 15%;
+    height: 30px;
+   
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+#slider{
+    width: 65%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    
+    background: #E00231;
+    border-radius: 0.1px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    
+    border: 1px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #E00231;
+  }
+  
+  #totalTime , #startTime{
+      width: 7%;
+      position: absolute;
+      height: 10px;
+      background-color: red;
+      
+      top: 40%;
+  }
+  #totalTime{
+    left: 86%;
+  }
+  #startTime{
+      color: white;
+      left: 12%;
+  }
+  @media(max-width:760px){
+    #totalTime , #startTime{        
+        top: 35%;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -6px;
+        height: 12px;
+        width: 12px;
+    }
+    #slider{
+        width: 75%;
+        top: 19%;
+    }
+    #playerbuttons{
+        width: 25%;
+        
+    }
+    #playerbuttons i{
+        font-size: 17px;
+      
+      
+    }
+    #playerimg img{
+        height: 100%;
+        width: 85%;
+        left: 15%;
+        position: absolute;
+        background-color: aqua;
+    }
+    #songName{
+ 
+        font-size: 10px;
+        top: 33%;
+    }
+#player{
+    height: 70px;
+}
+
+  }
+  @media(max-width:576px){
+    #totalTime , #startTime{        
+        top: 31%;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -5px;
+        height: 10px;
+        width: 10px;
+    }
+    #songName{
+ 
+        font-size: 9px;
+        
+    }
+    #playerimg img{
+     
+        width: 90%;
+       
+    }
+    #player{
+        height: 60px;
+    }
+    #playerbuttons{
+        width: 30%;
+        
+    }
+    #playerbuttons i{
+        font-size: 14px;
+      
+      
+    }
+    #songplay{
+        width: 60%;
+        position: relative;
+        top: 0%;
+    }
+    #slider{
+ 
+        top: 15%;
+    }
+
+  }
+  @media(max-width:424px){
+    #totalTime , #startTime{        
+        top: 30%;
+    }
+    #songName{
+ 
+        font-size: 7px;
+        
+    }
+    #playerimg img{
+        height: 100%;
+        width: 95%;
+        
+    }
+    #player{
+        height: 50px;
+    }
+    #playerbuttons{
+        width: 30%;
+        
+    }
+    #playerbuttons i{
+        font-size: 9px;
+      
+      
+    }
+    #songplay{
+        width: 60%;
+        position: relative;
+        
+    }
+
+
+  }
+  @media(max-width:360px){
+    #playerimg img{
+        height: 100%;
+        width: 100%;
+        
+    }
+    #playerbuttons{
+        width: 30%;
+        
+    }
+    #playerbuttons i{
+        font-size: 6px;
+      
+      
+    }
+    #songplay{
+        width: 60%;
+        position: relative;
+        
+    }
+
+
+  }
+
+/* ................................home.................................................. */
+
+
+#banner{
+    
+    overflow: hidden;
+    height: 65%;
+}
+#containbanner{
+width: 200%;
+height: 100%;
+animation: bannerSlider 10s infinite;
+}
+@keyframes bannerSlider{
+
+0%{
+    transform: translate(0%,0px);
+}
+50%{
+    transform: translate(-50%,0px);
+}
+100%{
+    transform: translate(0%,0px);
+}
+
+}
+.wide{
+    position: relative;
+    display: inline-block;
+    width: 49.9%;
+    
+    height: 100%;
+   
+}
+.wide h2{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    left: 35%;
+    color: white;
+}
+.wide img{
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+#albums{
+    background-color: black;
+    height: 70%;
+    padding-left: 20px;
+    color: white;
+}
+#albums h2{
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-bottom: 4%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+}
+.albumContainer{
+    padding-left: 5%;
+   width: 100%;
+   height: 80%;
+  
+   flex-wrap: wrap;
+}
+.album{
+    margin: 2%;
+    width: 200px;
+    height: 300px;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.album .imgDetails{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    height: 35%;
+    width: 100%;
+    background-color: #E00231;
+    transition: 0.5s;
+    text-align: center;
+    color: white;
+}
+.imgDetails h3{
+    font-size: 15px;
+    padding-top: 20%;
+}
+.album::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+
+}
+.low{
+    margin-top: 4%;
+}
+.album:hover::after{
+    transition: 0.5s;
+    opacity: 1;
+    border: 2px solid red;
+}
+.album:hover .imgDetails{
+    transform: translate(0px,-80%);
+    background: transparent;
+}
+
+@media(max-width:760px){
+    .album{
+        margin: 2%;
+        width: 20%;
+    height: 30%;    
+    }
+    .imgDetails h3{
+        font-size: 12px;
+        padding-top: 20%;
+    }
+   
+}
+@media(max-width:576px){
+    .album{
+        margin: 2%;
+        width: 130px;
+    height: 200px;    
+    }
+    .imgDetails h3{
+        font-size: 8px;
+        padding-top: 20%;
+    }
+   
+}
+@media(max-width:360px){
+    .album{
+        margin: 2%;
+        width: 120px;
+    height: 180px;    
+    }
+    .imgDetails h3{
+        font-size: 6px;
+        
+    }
+   
+}
+
+/* ..................................browse............................. */
+#backcolor{
+    background-color: #EFEFEF;
+    height: 1200px;
+    padding-left: 20px;
+}
+#backcolor a{
+    cursor: pointer;
+}
+
+#dummy{
+    height: 70px;
+}
+/* todaysTop */
+#todaysTop{
+  
+    width: 80%;
+    margin-top: 3%;
+    height: 300px;
+    position: relative;
+   
+}
+#todaysTop h2{
+    padding-left: 6%;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Markazi Text', serif;
+    color: black;
+}
+#todaysTopNext , #todaysTopBack{
+    position: absolute;
+    border: 0px;
+    box-shadow: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+}
+#todaysTopNext i , #todaysTopBack i{
+    position: absolute;
+    z-index: 5;
+    font-size: 50px;
+    color: black;
+}
+#todaysTopNext{
+    top: 38%;
+    left: 117%;
+}
+#todaysTopBack{
+    top: 38%;
+    left: 3%;
+}
+.songs{
+    padding-left: 5%;
+    width: 200%;
+    height: 280px;
+    /* position: relative; */
+    overflow: hidden;
+    
+}
+
+.songs:after{
+    content: "";
+    width: 200%;
+    top: 300px;
+    border-bottom: 1px solid grey;
+    position: absolute;
+}
+.tile{
+    
+    padding: 20px;
+    position: relative;
+    
+    height: inherit;
+    width: 200px;
+    
+}
+.tile a{
+    color: #E00231;
+}
+.tile h3{
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Asap', sans-serif;
+    
+    left: 50px;
+}
+.imgdesc{padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+    height: 35px;
+    
+}
+
+.imag{
+    height: 200px;
+    width: 100%;
+    content: "";
+    position: relative;
+}
+.imag::after{
+    z-index: 5;
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0,0.5);
+}
+.tile:hover .imag::after{
+    opacity: 1;
+    transition: .5s;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.songplayicon i {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 23%;
+    font-weight: 200;
+    opacity: 0;
+    
+}
+.tile:hover .songplayicon i{
+    opacity: 1;
+    transition: .5s;
+}
+
+/* top International */
+#topInternational{
+    margin-top: 30px;
+    height: 300px;
+    position: relative;
+   
+}
+#topInternational h2{
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Markazi Text', serif;
+    color: black;
+}
+
+@media(max-width:1200px){
+.tile{
+    padding: 15px;
+   width: 500px;
+}
+.songplayicon i{
+    font-size: 90px;
+}
+}
+@media(max-width:760px){
+    .tile{
+        padding: 15px;
+       width: 400px;
+       height: 20px;
+    }
+    .songplayicon i{
+        font-size: 70px;
+        top: 40%;
+    }
+    }
+    
+
+@media(max-width:480px){
+    .tile{
+        padding: 10px;
+       width: 400px;
+       height: 50px;
+    }
+    .songplayicon i{
+        font-size: 50px;
+        top: 60%;
+        left: 27%;
+    }
+    }
+    @media(max-width:320px){
+        .tile{
+            padding: 10px;
+           width: 400px;
+           height: 150px;
+        }
+        .songplayicon i{
+            font-size: 45px;
+            top: 65%;
+            left: 30%;
+        }
+        }
+
+
+/* ....................................responsive..................................... */
+

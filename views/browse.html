@@ -1,0 +1,60 @@
+<div id="backcolor">
+        <div id="dummy"></div>
+        <div id="todaysTop">
+                <h2>Todays Trending Lectures</h2>
+                <button id="todaysTopBack" ng-click="todaysTopBack()">
+                        <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="songs row">
+
+
+                        <div class='tile' ng-repeat="song in Ssongs">
+                                <a ng-click='play()'>
+                                        <div class='songplayicon'>
+                                                <i ng-click='play()' class='far fa-play-circle'></i>
+                                        </div>
+
+                                        <div class='imag'>
+                                                <img ng-src="{{song.songImg}}"></img>
+                                        </div>
+                                        <div class='imgdesc'>
+                                                <h3 ng-bind="song.songName">{{song.songName}}</h3>
+                                        </div>
+                        </div>
+                </div>
+                <button id="todaysTopNext" ng-click="todaysTopNext()">
+                        <i class="fas fa-chevron-right"></i>
+                </button>
+
+        </div>
+        <div id="todaysTop">
+                        <h2>Top International</h2>
+                        <button id="todaysTopBack" ng-click="todaysTopBack()">
+                                <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="songs row">
+        
+        
+                                <div class='tile' ng-repeat="song in Ssongs">
+                                        <a ng-click='play()'>
+                                                <div class='songplayicon'>
+                                                        <i ng-click='play()' class='far fa-play-circle'></i>
+                                                </div>
+        
+                                                <div class='imag'>
+                                                        <img ng-src="{{song.songImg}}"></img>
+                                                </div>
+                                                <div class='imgdesc'>
+                                                        <h3 ng-bind="song.songName">{{song.songName}}</h3>
+                                                </div>
+                                </div>
+                        </div>
+                        <button id="todaysTopNext" ng-click="todaysTopNext()">
+                                <i class="fas fa-chevron-right"></i>
+                        </button>
+        
+                </div>
+
+</div>
+
+</div>

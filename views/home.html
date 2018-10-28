@@ -1,0 +1,30 @@
+<div id="home">
+    <div id="banner" class="container">
+        <div id="containbanner">
+            <div class="wide">
+                <img src="https://blog.commlabindia.com/wp-content/uploads/2017/01/a-z-of-elearning.jpg" alt="">
+                <h2>The Best In Lectures</h2>
+            </div>
+            <div class="wide">
+                <img src="https://edugorilla.com/wp-content/uploads/2017/11/Picture1.png" alt="">
+                <h2>Try Our Browse Section</h2>
+            </div>
+        </div>
+    </div>
+    <div id="albums">
+
+        <div id="trendingAlbums" class="container ">
+            
+            <h2>Trending Lecturers</h2>
+            <div class="row albumContainer">
+                <div ng-repeat="albums in album" class="album"  ng-class-even="'low'">
+                    <img ng-src="{{albums[0].albumImg}}" alt="image">
+                    
+                    <div class="imgDetails">
+                        <h3 >{{albums[0].albumName}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
